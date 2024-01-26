@@ -30,3 +30,6 @@ export const getIsBaseColor = (color: Color | string) =>
 const sizeValues = ["xs", "sm", "md", "lg", "xl"] as const;
 
 export type Size = (typeof sizeValues)[number];
+
+export type HorizontalPosition = "left" | "right";
+export type VerticalPosition = "top" | "bottom";

@@ -4,6 +4,7 @@ import colors from "tailwindcss/colors";
 const config: Config = {
   darkMode: "class",
   content: [
+    "./src/assets/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -51,6 +52,31 @@ const config: Config = {
             inverted: colors.gray[950],
           },
         },
+      },
+      boxShadow: {
+        // light
+        "portal-input": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+        "portal-card":
+          "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+        "portal-dropdown":
+          "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+        // dark
+        "dark-portal-input": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+        "dark-portal-card":
+          "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+        "dark-portal-dropdown":
+          "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+      },
+      borderRadius: {
+        "portal-small": "0.375rem",
+        "portal-default": "0.5rem",
+        "portal-full": "9999px",
+      },
+      fontSize: {
+        "portal-label": ["0.75rem", { lineHeight: "1rem" }],
+        "portal-default": ["0.875rem", { lineHeight: "1.25rem" }],
+        "portal-title": ["1.125rem", { lineHeight: "1.75rem" }],
+        "portal-metric": ["1.875rem", { lineHeight: "2.25rem" }],
       },
     },
   },
