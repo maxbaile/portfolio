@@ -1,10 +1,11 @@
+import { Badge } from "@/components";
 import { FC } from "react";
 
 const Hero: FC = () => {
   return (
     <div className="relative isolate px-6 pt-14 lg:px-8">
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+        <div className="hidden sm:mb-12 sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-portal-content-emphasis dark:text-dark-portal-content-emphasis ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-gray-100/10 dark:hover:ring-gray-100/20">
             Announcing our next round of funding.{" "}
             <div className="font-semibold text-indigo-600">
@@ -13,7 +14,14 @@ const Hero: FC = () => {
             </div>
           </div>
         </div>
-        <div className="text-center">
+        <div className="flex items-center justify-center">
+          <Badge
+            src="/profil.jpg"
+            label="- WEB DEVELOPER - WEB DEVELOPER "
+            className="text-portal-content-emphasis dark:text-dark-portal-content-emphasis"
+          />
+        </div>
+        <div className="text-center mt-12">
           <h1 className="text-4xl font-bold tracking-tight text-portal-content-strong dark:text-dark-portal-content-strong sm:text-6xl">
             Data to enrich your online business
           </h1>
