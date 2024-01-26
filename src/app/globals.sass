@@ -1,0 +1,12 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+body
+  background-image: url('/dots-dark.svg')
+
+  @media (prefers-color-scheme: dark)
+    background-image: url('/dots-light.svg')
+    @apply bg-dark-portal-background text-dark-portal-content
+
+  @apply bg-portal-background text-portal-content
