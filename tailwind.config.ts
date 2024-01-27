@@ -3,18 +3,16 @@ import colors from "tailwindcss/colors";
 
 const config: Config = {
   darkMode: "class",
-  content: [
-    "./src/assets/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       colors: {
         portal: {
           background: {
-            DEFAULT: "#D9D9D9",
+            muted: colors.gray[50],
+            subtle: colors.gray[100],
+            DEFAULT: colors.white,
+            emphasis: colors.gray[700],
           },
           brand: {
             faint: colors.blue[50],
@@ -34,7 +32,10 @@ const config: Config = {
         },
         "dark-portal": {
           background: {
+            muted: "#f6f6f6",
+            subtle: "#3d3d3d",
             DEFAULT: "#161616",
+            emphasis: "#b0b0b0",
           },
           brand: {
             faint: "#0B1229",
