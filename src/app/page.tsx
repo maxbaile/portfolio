@@ -1,11 +1,11 @@
-import { FeaturedProjects, Hero } from "@/sections";
-import Image from "next/image";
+import { About, FeaturedProjects, Hero } from "@/sections";
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <FeaturedProjects />
+      <About />
     </main>
   );
 }

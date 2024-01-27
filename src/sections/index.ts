@@ -1,2 +1,3 @@
-export { default as Hero } from "./Hero";
-export { default as FeaturedProjects } from "./FeaturedProjects";
+export * from "./About";
+export * from "./Hero";
+export * from "./FeaturedProjects";
