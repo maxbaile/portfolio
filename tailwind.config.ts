@@ -22,6 +22,12 @@ const config: Config = {
             emphasis: colors.blue[700],
             inverted: colors.white,
           },
+          border: {
+            DEFAULT: colors.gray[200],
+          },
+          ring: {
+            DEFAULT: colors.gray[200],
+          },
           content: {
             subtle: colors.gray[400],
             DEFAULT: colors.gray[500],
@@ -44,6 +50,12 @@ const config: Config = {
             DEFAULT: colors.blue[500],
             emphasis: colors.blue[400],
             inverted: colors.blue[950],
+          },
+          border: {
+            DEFAULT: colors.gray[700],
+          },
+          ring: {
+            DEFAULT: colors.gray[800],
           },
           content: {
             subtle: colors.gray[600],
